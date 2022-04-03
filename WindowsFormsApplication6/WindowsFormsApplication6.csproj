@@ -1,0 +1,221 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6A351857-D8B5-41C7-9EC6-8C0CF086C28D}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WindowsFormsApplication6</RootNamespace>
+    <AssemblyName>WindowsFormsApplication6</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>true</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="add_driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="add_driver.Designer.cs">
+      <DependentUpon>add_driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="car.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="car.Designer.cs">
+      <DependentUpon>car.cs</DependentUpon>
+    </Compile>
+    <Compile Include="complain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="complain.Designer.cs">
+      <DependentUpon>complain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="data.Designer.cs">
+      <DependentUpon>data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="driver.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driver.Designer.cs">
+      <DependentUpon>driver.cs</DependentUpon>
+    </Compile>
+    <Compile Include="driver_trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="driver_trip.Designer.cs">
+      <DependentUpon>driver_trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="finish_trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="finish_trip.Designer.cs">
+      <DependentUpon>finish_trip.cs</DependentUpon>
+    </Compile>
+    <Compile Include="first_page.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="first_page.Designer.cs">
+      <DependentUpon>first_page.cs</DependentUpon>
+    </Compile>
+    <Compile Include="admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="admin.Designer.cs">
+      <DependentUpon>admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger.Designer.cs">
+      <DependentUpon>passenger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="passenger_data.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="passenger_data.Designer.cs">
+      <DependentUpon>passenger_data.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="promo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="promo.Designer.cs">
+      <DependentUpon>promo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="trip.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="trip.Designer.cs">
+      <DependentUpon>trip.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="add_driver.resx">
+      <DependentUpon>add_driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="car.resx">
+      <DependentUpon>car.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="complain.resx">
+      <DependentUpon>complain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="data.resx">
+      <DependentUpon>data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driver.resx">
+      <DependentUpon>driver.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="driver_trip.resx">
+      <DependentUpon>driver_trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="finish_trip.resx">
+      <DependentUpon>finish_trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="first_page.resx">
+      <DependentUpon>first_page.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="admin.resx">
+      <DependentUpon>admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger.resx">
+      <DependentUpon>passenger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="passenger_data.resx">
+      <DependentUpon>passenger_data.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="promo.resx">
+      <DependentUpon>promo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="trip.resx">
+      <DependentUpon>trip.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %282%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download %283%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\images %282%29.jpg" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
